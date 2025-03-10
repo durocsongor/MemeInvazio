@@ -1,0 +1,86 @@
+:root {
+    --text-color: #17BD3E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tarolo {
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    font-size: 3rem;
+}
+
+.focim {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 500;
+    user-select: none;
+}
+
+.focim_zold {
+    color: var(--text-color);
+}
+
+.login {
+    background-color: var(--text-color);
+}
+
+.login, .reg {
+    background-color: var(--text-color);
+    padding: 15px;
+    width: 500px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: ease 500ms;
+}
+
+.reg {
+   background-color: white;
+   margin-top: 20px;
+}
+
+#btnLogin, #btnReg {
+    font-size: 1.5rem;
+    color: white;
+    background-color: inherit;
+    border: none;
+    cursor: inherit;
+}
+
+#btnLogin {
+    color: white;
+}
+
+#btnReg {
+    color: var(--text-color);
+}
+
+.login:hover, .reg:hover {
+    transform: scale(1.01);
+    
+}
+
+@media screen and (max-width: 428px) {
+    .login, .reg {
+        width: 350px;
+    }
+}
