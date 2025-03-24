@@ -60,7 +60,7 @@ input {
     outline: none;
 }
 
-.reg {
+.login {
     background-color: var(--text-color);
     width: 500px;
     border-radius: 20px;
@@ -76,7 +76,7 @@ input {
     transform: scale(1.01);
 }
 
-.reg button {
+.login button {
     font-size: 1.5rem;
     color: white;
     background-color: inherit;
