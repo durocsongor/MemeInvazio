@@ -89,3 +89,54 @@ input {
         width: 340px;
     }
 }
+
+
+.login {
+   background-color: white;
+   margin-top: 20px;
+}
+
+#btnReg {
+    background-color: var(--text-color);
+    font-size: 1.5rem;
+    color: white;
+    background-color: inherit;
+    border: none;
+    cursor: inherit;
+}
+
+.login {
+    background-color: var(--text-color);
+}
+
+.login {
+    background-color: var(--text-color);
+    padding: 15px;
+    width: 500px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: ease 500ms;
+}
+
+
+
+#btnReg {
+    font-size: 1.5rem;
+    color: white;
+    background-color: inherit;
+    border: none;
+    cursor: inherit;
+}
+
+
+#btnReg {
+    color: var(--text-color);
+}
+
+.reg:hover {
+    transform: scale(1.01);
+    
+}
