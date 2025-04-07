@@ -95,33 +95,42 @@ nav a:hover {
     display: flex;
 }
 
-/* hozzaadas gomb */
+/* main formazasa */
 
-.fixed {
-    position: fixed;
-    right: 30px;
-    top: 80%;
-    background-color: var(--text-color);
-    height: 62px;
-    width: 62px;
-    border-radius: 50%;
+main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px;
+}
+
+.newMeme {
+    height: 300px;
+    width: 500px;
+    /* border: 1px solid black; */
+    gap: 40px;
+    border-radius: 0.5rem;
+    background-image: url('../img/transparent.jpg');
+    position: relative;
+}
+
+.newMeme > label {
+    background-color: #62605C;
+    position: absolute;
+    top: 85%;
+    right: 5%;
+    color: white;
+    font-size: 1rem;
+    border-radius: 1.875rem;
+    padding: 0.5rem;
     cursor: pointer;
-    z-index: 1000;
     transition: ease 0.5s;
 }
 
-.fixed:hover {
+.newMeme>label:hover{
     transform: scale(1.1);
 }
 
-.fixed > i {
-    color: white;
-    font-size: 2.5rem;
-    background-color: inherit;
-}
 
 /* hamburger menu 768px-tol */
 
@@ -141,14 +150,5 @@ nav a:hover {
         left: 0;
         font-size: 1.5rem;
         display: none;
-    }
-
-    .fixed {
-        width: 40px;
-        height: 40px;
-    }
-
-    .fixed > i {
-        font-size: 2rem;
     }
 }
