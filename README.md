@@ -1,1 +1,1 @@
-Szinya
+memeinvazio frontend fejlesztése

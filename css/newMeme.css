@@ -1,3 +1,4 @@
+/* alap beállítások */
 :root {
     --text-color: #17BD3E;
 }
@@ -10,11 +11,10 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: silver;   
+    background-color: silver;
 }
 
-/* fejlec menuvel */
-
+/* ----- a fejléc a menüvel ----- */
 header {
     background-color: white;
     display: flex;
@@ -34,8 +34,7 @@ header {
     color: var(--text-color);
 }
 
-/* menu alapállapotban */
-
+/*  menü alapállapotban */
 nav {
     display: flex;
     gap: 2rem;
@@ -46,12 +45,12 @@ nav {
 nav a {
     text-decoration: none;
     color: black;
-    display: flex;
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
     transition: ease 500ms;
 }
 
@@ -68,8 +67,7 @@ nav a:hover {
     color: white;
 }
 
-/* hamburger menu */
-
+/* hamburger menü */
 .hamburger-menu {
     background-color: white;
     width: 30px;
@@ -81,11 +79,11 @@ nav a:hover {
 }
 
 .hamburger-menu span {
+    display: block;
     height: 4px;
     width: 100%;
     border-radius: 2px;
     background-color: black;
-    display: block;
 }
 
 .menu-toggle {
@@ -96,41 +94,39 @@ nav a:hover {
     display: flex;
 }
 
-/* main formazasa */
-
+/* --- main div formázása --- */
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
-    gap: 40px;
     flex-direction: column;
+    gap: 40px;
+    padding: 40px;
 }
 
 .newMeme {
     height: 300px;
     width: 500px;
     /* border: 1px solid black; */
-    gap: 40px;
     border-radius: 0.5rem;
     background-image: url('../img/transparent.jpg');
     position: relative;
 }
 
-.newMeme > label {
+.newMeme>label {
     background-color: #62605C;
     position: absolute;
-    top: 85%;
+    top: 70%;
     right: 5%;
     color: white;
     font-size: 1rem;
     border-radius: 1.875rem;
-    padding: 0.5rem;
+    padding: 0.6rem;
     cursor: pointer;
     transition: ease 0.5s;
 }
 
-.newMeme>label:hover{
+.newMeme>label:hover {
     transform: scale(1.1);
 }
 
@@ -151,20 +147,19 @@ main {
 }
 
 .uploadButton:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .uploadButton>button {
     font-size: 1.5rem;
     color: white;
-    background-color: var(--text-color);
+    background-color: inherit;
     border: none;
     cursor: pointer;
 }
 
-/* hamburger menu 768px-tol */
-
-@media screen and (max-width: 768px){
+/* --- hamburger menü, plus gomb 768px-től --- */
+@media screen and (max-width: 768px) {
     .hamburger-menu {
         display: flex;
     }
@@ -175,14 +170,15 @@ main {
         width: 100%;
         background-color: white;
         padding: 10px;
-        position: absolute; /* egy relativ elemhez kepes viszonyul valamilyen modon */
+        position: absolute;
         top: 70px;
         left: 0;
         font-size: 1.5rem;
         display: none;
     }
 
-    .newMeme, .uploadButton {
+    .newMeme,
+    .uploadButton {
         width: 350px;
     }
 }

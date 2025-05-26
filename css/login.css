@@ -14,22 +14,21 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-size: 3rem;
 }
 
 .tarolo {
     display: flex;
-    max-width: 1200px;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     flex-direction: column;
-    font-size: 3rem;
+    gap: 1rem;
 }
 
 .focim {
     text-transform: uppercase;
     text-align: center;
-    font-size: 500;
+    font-weight: 500;
     user-select: none;
 }
 
@@ -37,28 +36,40 @@ body {
     color: var(--text-color);
 }
 
-.login {
-    background-color: var(--text-color);
-}
-
-.login, input {
-    background-color: var(--text-color);
-    padding: 15px;
-    width: 500px;
-    border-radius: 15px;
+.input {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    transition: ease 500ms;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+input {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    width: 90%;
+    border: none;
+    outline: none;
 }
 
 .login {
-   background-color: white;
-   margin-top: 20px;
+    background-color: var(--text-color);
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: ease 0.5s;
 }
 
-#btnLogin, #btnReg {
+.login:hover {
+    transform: scale(1.01);
+}
+
+.login button {
     font-size: 1.5rem;
     color: white;
     background-color: inherit;
@@ -66,22 +77,10 @@ body {
     cursor: inherit;
 }
 
-#btnLogin {
-    color: white;
-}
+@media screen and (max-width: 500px) {
 
-#btnReg {
-    color: var(--text-color);
-}
-
-.login:hover, .reg:hover {
-    transform: scale(1.01);
-    
-}
-
-@media screen and (max-width: 428px) {
-    .login, .reg {
-        width: 350px;
+    .login,
+    .input {
+        width: 340px;
     }
 }
-
